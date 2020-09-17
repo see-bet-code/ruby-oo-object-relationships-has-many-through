@@ -1,12 +1,12 @@
 require 'pry'
 
 class Waiter
-    attr_accessor :name, :years, :meals
+    attr_accessor :name, :yrs_experience, :meals
     @@all = []
 
-    def initialize(name, years)
+    def initialize(name, yrs_experience)
         @name = name
-        @years = years
+        @yrs_experience = yrs_experience
         @@all << self
         @meals = []
     end
